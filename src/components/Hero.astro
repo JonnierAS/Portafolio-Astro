@@ -1,0 +1,60 @@
+
+<section id="hero" class="min-h-screen flex items-center pt-20">
+  <div class="container mx-auto px-4 py-16 md:py-32">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div class="order-2 md:order-1 animate-fade-in">
+        <h1 class="text-5xl md:text-6xl font-bold mb-4">
+          <span class="block">Jonnier</span>
+          <span class="block text-primary-600 dark:text-primary-400">Salaverria</span>
+        </h1>
+        
+        <div class="relative h-12 mb-6 overflow-hidden">
+          <h2 id="job-title" class="text-2xl md:text-3xl font-medium text-gray-600 dark:text-gray-300 absolute typewriter">Full Stack Developer</h2>
+        </div>
+        
+        <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-lg">
+          Creating modern, responsive, and user-friendly web applications with a focus on quality and performance.
+        </p>
+        
+        <div class="flex flex-wrap gap-4">
+          <a href="#contact" class="px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl">Get in touch</a>
+          <a href="#projects" class="px-6 py-3 border border-primary-600 text-primary-600 dark:text-primary-400 hover:bg-primary-600/10 rounded-lg transition-colors duration-300">View projects</a>
+        </div>
+      </div>
+      
+      <div class="order-1 md:order-2 flex justify-center animate-fade-in">
+        <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-primary-400 to-secondary-500 p-1">
+          <div class="absolute inset-0 rounded-full overflow-hidden">
+            <img 
+              src={'/images/hero.png'} 
+              alt="Jonnier Salaverria" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .typewriter {
+    overflow: hidden;
+    border-right: 3px solid;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #3B82F6 }
+  }
+</style>

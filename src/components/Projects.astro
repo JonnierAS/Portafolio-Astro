@@ -1,0 +1,158 @@
+---
+const projects = [
+  {
+    title: "Censo Predial Platform",
+    description: "Plataforma geoespacial para la gestión de censo predial con visualización de mapas interactivos, manejo de datos geográficos y análisis territorial usando Mapbox y tecnologías de servidor de mapas.",
+    image: "../images/censo.png",
+    tags: ["React" , "Geoserver" , "JavaScript" , "TypeScript" , "Docker" , "TailwindCSS" ,  "Python" , "Mapbox" , "MapLibre" , "Node.js" , "PostgreSQL"],
+    demoUrl: "https://vimeo.com/1069754132",
+    repoUrl: "#"
+  },
+  {
+    title: "Gestion de zonas",
+    description: "Sistema integral de gestión territorial con funcionalidades de administración de zonas geográficas, mapas interactivos con Leaflet y arquitectura escalable usando Next.js y microservicios.",
+    image: "../images/azzorti.png",
+    tags: ["React" , "Next.js" , "Python" , "Geoserver" , "JavaScript" , "TypeScript" , "Docker" , "NGINX"  , "TailwindCSS" , "Redux" , "Leaflet" , "Node.js" , "PostgreSQL"],
+    demoUrl: "https://vimeo.com/1061572689",
+    repoUrl: "#"
+  },
+  {
+    title: "Plano Comercial",
+    description: "Aplicación web para visualización y gestión de planos comerciales con mapas interactivos, análisis geoespacial y arquitectura dockerizada con servidores de mapas especializados.",
+    image: "../images/jockey.png",
+    tags: ["React ", "Geoserver ", "Docker Compose", "NGINX  ", "JavaScript ", "TypeScript ", "TailwindCSS ", "Leaflet ", "Node.js ", "PostgreSQL"],
+    demoUrl: "https://vimeo.com/1061571858",
+    repoUrl: "#"
+  },
+  {
+    title: "Estilizador de Capas",
+    description: "Herramienta especializada para la personalización y estilización de capas de mapas con integración de Geoserver, utilizando MapLibre y Mapbox para renderizado avanzado de estilos cartográficos.",
+    image: "../images/layer-style.png",
+    tags: ["React" , "Geoserver" , "JavaScript" , "TailwindCSS" , "Redux" , "Mapbox" , "MapLibre" , "Python"],
+    demoUrl: "https://vimeo.com/1028033387?share=copy",
+    repoUrl: "https://custom-style-layer-maplibre-component-ten.vercel.app"
+  },
+  {
+    title: "Market B2B",
+    description: "Marketplace B2B desarrollado con arquitectura GraphQL moderna, utilizando Apollo Client/Server para gestión eficiente de datos y transacciones comerciales entre empresas.",
+    image: "../images/MDR.png",
+    tags: ["Apollo-Client" , "Apollo-Server" , "GraphQL" , "PostgreSQL" , "Node.js" , "JavaScript" , "Tailwind"],
+    demoUrl: "https://vimeo.com/manage/videos/876953448",
+    repoUrl: "https://market-residuos.vercel.app"
+  },
+  {
+    title: "Pagina Web De Videojuegos",
+    description: "Plataforma web dedicada a videojuegos con base de datos PostgreSQL para gestión de contenido, interfaz React interactiva y sistema de estado global con Redux para experiencia de usuario optimizada.",
+    image: "../images/Videogames.png",
+    tags: ["React.js" ,"PostgreSQL" ,"Node.js" ,"JavaScript" ,"Express" ,"Redux" ,"CSS"],
+    demoUrl: "https://vimeo.com/876415669?share=copy",
+    repoUrl: "#"
+  }
+];
+
+const categories = ["All", "React", "Node.js", "TypeScript", "Next.js", "JavaScript", "Python"];
+---
+
+<section id="projects" class="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">My Projects</h2>
+    <p class="text-center text-gray-600 dark:text-gray-300 mb-12 max-w-xl mx-auto">
+      Here are some of my recent projects that showcase my skills and expertise in web development.
+    </p>
+    
+    <div class="flex justify-center flex-wrap gap-4 mb-12">
+      {categories.map((category, index) => (
+        <button 
+          class={`px-4 py-2 rounded-lg transition-colors duration-300 ${index === 0 ? 'bg-primary-600 text-white' : 'bg-white dark:bg-gray-700 hover:bg-primary-600/10'}`}
+          data-category={category}
+        >
+          {category}
+        </button>
+      ))}
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+      {projects.map(project => (
+        <div class="project-card bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 animate-slide-up group" data-tags={JSON.stringify(project.tags)}>
+          <div class="relative overflow-hidden h-48">
+            <img 
+              src={project.image} 
+              alt={project.title} 
+              class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+            />
+
+            <div class="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-6">
+              <div class="text-center transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                <p class="text-white text-sm leading-relaxed">{project.description}</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-4">{project.title}</h3>
+            <div class="flex flex-wrap gap-2 mb-6">
+              {project.tags.map(tag => (
+                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-sm rounded-md">{tag}</span>
+              ))}
+            </div>
+            <div class="flex gap-4">
+              <a 
+                href={project.demoUrl} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-colors duration-300 text-sm"
+              >
+                Live Demo
+              </a>
+              {project.repoUrl !== '#' && 
+                <a 
+                  href={project.repoUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="px-4 py-2 border border-primary-600 text-primary-600 dark:text-primary-400 hover:bg-primary-600/10 rounded-lg transition-colors duration-300 text-sm"
+                >
+                  Source Code
+                </a>
+              }
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('[data-category]');
+    const projectCards = document.querySelectorAll('.project-card');
+    
+    // Filter projects on category click
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Remove active class from all buttons
+        filterButtons.forEach(btn => {
+          btn.classList.remove('bg-primary-600', 'text-white');
+          btn.classList.add('bg-white', 'dark:bg-gray-700', 'hover:bg-primary-600/10');
+        });
+        
+        // Add active class to clicked button
+        button.classList.add('bg-primary-600', 'text-white');
+        button.classList.remove('bg-white', 'dark:bg-gray-700', 'hover:bg-primary-600/10');
+        
+        const category = button.getAttribute('data-category');
+        
+        // Filter projects
+        projectCards.forEach(card => {
+          const tagsAttribute = card.getAttribute('data-tags');
+          const tags = JSON.parse(tagsAttribute);
+          
+          if (category === 'All' || tags.includes(category)) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  });
+</script>
