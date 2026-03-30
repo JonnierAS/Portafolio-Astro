@@ -1,37 +1,55 @@
 ---
 const frontendSkills = [
   { name: "React",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-  { name: "Astro",  icon: "../images/iastro.png" },
-  { name: "Vue",  icon: "../images/vue.jpeg" },
   { name: "Next.js",  icon: "../images/nextjs.jpeg" },
-  { name: "HTML5", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
-  { name: "JavaScript",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+  { name: "Vue",  icon: "../images/vue.jpeg" },
+  { name: "Astro",  icon: "../images/iastro.png" },
+  { name: "Redux Toolkit",  icon: "../images/redux.jpeg" },
   { name: "TypeScript",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+  { name: "JavaScript",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
   { name: "Tailwind CSS",  icon: "../images/tailwindcss.jpeg" },
+  { name: "HTML5", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
   { name: "CSS3",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
 ];
 
 const backendSkills = [
   { name: "Node.js",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
   { name: "Express.js",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
-  { name: "Elastic Search",  icon: "../images/elastic.jpeg" },
-  { name: "PostgreSQL",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+  { name: "FastAPI",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
   { name: "Python",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+  { name: "PostgreSQL",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+  { name: "SQL Server",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-original.svg" },
+  { name: "Redis",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" },
+  { name: "Elasticsearch",  icon: "../images/elastic.jpeg" },
+  { name: "DuckDB",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/duckdb/duckdb-original.svg" },
   { name: "GraphQL",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" },
+  { name: "Sequelize",  icon: "../images/Sequelize-01.png" },
+  { name: "SQLAlchemy",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg" },
+];
+
+const gisSkills = [
+  { name: "MapLibre",  icon: "../images/Maplibre-logo.png" },
+  { name: "Mapbox",  icon: "../images/mapbox.png" },
+  { name: "Deck.gl",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg" },
+  { name: "Leaflet",  icon: "../images/leaflet.png" },
+  { name: "Turf.js",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+  { name: "GeoServer",  icon: "../images/geoserver.png" },
+  { name: "GeoPandas",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" },
+  { name: "H3 Indexing",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+  { name: "GDAL",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+  { name: "Shapefiles",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
 ];
 
 const toolsSkills = [
-  { name: "NGINX",  icon: "../images/nginx.png" },
   { name: "Docker",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
-  { name: "Geoserver",  icon: "../images/geoserver.png" },
-  { name: "Maplibre",  icon: "../images/Maplibre-logo.png" },
-  { name: "Mapbox",  icon: "../images/mapbox.png" },
-  { name: "Leaflet",  icon: "../images/leaflet.png" },
-  { name: "Sequelize",  icon: "../images/Sequelize-01.png" },
-  { name: "Redux",  icon: "../images/redux.jpeg" },
-  { name: "Rest API",  icon: "../images/Restapi.png" },
+  { name: "NGINX",  icon: "../images/nginx.png" },
+  { name: "Kong Gateway",  icon: "../images/kong.svg" },
+  { name: "Swagger",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg" },
   { name: "Git",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+  { name: "Vitest",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitest/vitest-original.svg" },
+  { name: "Jira",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" },
   { name: "Figma",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
+  { name: "Rest API",  icon: "../images/Restapi.png" },
   { name: "VS Code",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
 ];
 ---
@@ -40,52 +58,61 @@ const toolsSkills = [
   <div class="container mx-auto px-4">
     <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">My Skills</h2>
     
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
       <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow animate-slide-up">
-        <h3 class="text-xl font-semibold mb-6 text-center">Frontend Development</h3>
-        
-        <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
+        <h3 class="text-xl font-semibold mb-6 text-center">Frontend</h3>
+
+        <div class="grid grid-cols-1 gap-4">
           {frontendSkills.map(skill => (
             <div class="skill-item">
-              <div class="flex items-center justify-between mb-2">
-                <div class="flex items-center gap-2">
-                  <img src={skill.icon} alt={skill.name} class="w-6 h-6" />
-                  <span>{skill.name}</span>
-                </div>
+              <div class="flex items-center gap-2">
+                <img src={skill.icon} alt={skill.name} class="w-6 h-6" />
+                <span>{skill.name}</span>
               </div>
             </div>
           ))}
         </div>
       </div>
-      
+
       <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow animate-slide-up delay-100">
-        <h3 class="text-xl font-semibold mb-6 text-center">Backend Development</h3>
-        
-        <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
+        <h3 class="text-xl font-semibold mb-6 text-center">Backend & Databases</h3>
+
+        <div class="grid grid-cols-1 gap-4">
           {backendSkills.map(skill => (
             <div class="skill-item">
-              <div class="flex items-center justify-between mb-2">
-                <div class="flex items-center gap-2">
-                  <img src={skill.icon} alt={skill.name} class="w-6 h-6" />
-                  <span>{skill.name}</span>
-                </div>
+              <div class="flex items-center gap-2">
+                <img src={skill.icon} alt={skill.name} class="w-6 h-6" />
+                <span>{skill.name}</span>
               </div>
             </div>
           ))}
         </div>
       </div>
-      
+
+      <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow animate-slide-up delay-150">
+        <h3 class="text-xl font-semibold mb-6 text-center">GIS & Geospatial</h3>
+
+        <div class="grid grid-cols-1 gap-4">
+          {gisSkills.map(skill => (
+            <div class="skill-item">
+              <div class="flex items-center gap-2">
+                <img src={skill.icon} alt={skill.name} class="w-6 h-6" />
+                <span>{skill.name}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
       <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow animate-slide-up delay-200">
-        <h3 class="text-xl font-semibold mb-6 text-center">Tools & Workflow</h3>
-        
-        <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
+        <h3 class="text-xl font-semibold mb-6 text-center">DevOps & Tools</h3>
+
+        <div class="grid grid-cols-1 gap-4">
           {toolsSkills.map(skill => (
             <div class="skill-item">
-              <div class="flex items-center justify-between mb-2">
-                <div class="flex items-center gap-2">
-                  <img src={skill.icon} alt={skill.name} class="w-6 h-6" />
-                  <span>{skill.name}</span>
-                </div>
+              <div class="flex items-center gap-2">
+                <img src={skill.icon} alt={skill.name} class="w-6 h-6" />
+                <span>{skill.name}</span>
               </div>
             </div>
           ))}

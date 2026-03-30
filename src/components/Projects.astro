@@ -1,56 +1,80 @@
 ---
 const projects = [
   {
-    title: "Censo Predial Platform",
-    description: "Plataforma geoespacial para la gestión de censo predial con visualización de mapas interactivos, manejo de datos geográficos y análisis territorial usando Mapbox y tecnologías de servidor de mapas.",
-    image: "../images/censo.png",
-    tags: ["React" , "Geoserver" , "JavaScript" , "TypeScript" , "Docker" , "TailwindCSS" ,  "Python" , "Mapbox" , "MapLibre" , "Node.js" , "PostgreSQL"],
-    demoUrl: "https://vimeo.com/1069754132",
+    title: "Fiber Optic Network Manager (OSP)",
+    description: "Full-stack GIS platform for fiber optic network management. Interactive map visualization with MapLibre GL and Mapbox GL Draw. Clean/Hexagonal Architecture backend with dual database (SQL Server + PostgreSQL). Azure AD authentication, DuckDB analytics, and Docker deployment.",
+    image: "../images/ftth.png",
+    tags: ["React", "TypeScript", "Node.js", "SQL Server", "PostgreSQL", "MapLibre", "Redux Toolkit", "Docker", "Azure AD", "Clean Architecture"],
+    demoUrl: "#",
     repoUrl: "#"
   },
   {
-    title: "Gestion de zonas",
-    description: "Sistema integral de gestión territorial con funcionalidades de administración de zonas geográficas, mapas interactivos con Leaflet y arquitectura escalable usando Next.js y microservicios.",
-    image: "../images/azzorti.png",
-    tags: ["React" , "Next.js" , "Python" , "Geoserver" , "JavaScript" , "TypeScript" , "Docker" , "NGINX"  , "TailwindCSS" , "Redux" , "Leaflet" , "Node.js" , "PostgreSQL"],
-    demoUrl: "https://vimeo.com/1061572689",
+    title: "Territorial Analytics Platform (ATU)",
+    description: "Big data territorial analysis platform with 3D visualization using Deck.gl. FastAPI backend with Elasticsearch for large-scale geospatial search. Data processing with Pandas, GeoPandas, H3 hexagonal indexing, and PyArrow/Parquet formats.",
+    image: "../images/atu.png",
+    tags: ["React", "Next.js", "Python", "FastAPI",  "Deck.gl", "Redux Toolkit", "Docker", "H3", "TypeScript"],
+    demoUrl: "#",
     repoUrl: "#"
   },
   {
-    title: "Plano Comercial",
-    description: "Aplicación web para visualización y gestión de planos comerciales con mapas interactivos, análisis geoespacial y arquitectura dockerizada con servidores de mapas especializados.",
+    title: "Jockey Commercial Map (MapaJP)",
+    description: "Microservices architecture with horizontally-scaled GeoServer cluster (master-slave) using ActiveMQ and Nginx load balancer. Kong API Gateway for service routing. Redis caching layer with K6 and Locust load testing.",
     image: "../images/jockey.png",
-    tags: ["React ", "Geoserver ", "Docker Compose", "NGINX  ", "JavaScript ", "TypeScript ", "TailwindCSS ", "Leaflet ", "Node.js ", "PostgreSQL"],
+    tags: ["React", "GeoServer", "Docker", "NGINX", "Kong", "Redis", "TypeScript", "Leaflet", "Node.js", "PostgreSQL"],
     demoUrl: "https://vimeo.com/1061571858",
     repoUrl: "#"
   },
   {
-    title: "Estilizador de Capas",
-    description: "Herramienta especializada para la personalización y estilización de capas de mapas con integración de Geoserver, utilizando MapLibre y Mapbox para renderizado avanzado de estilos cartográficos.",
+    title: "Censo Predial Platform",
+    description: "Census data visualization and management system with React, Redux, MapLibre GL and Deck.gl. Backend with Node.js/Express, Sequelize and PostgreSQL. File processing: shapefiles, Excel, ZIP and XML.",
+    image: "../images/censo.png",
+    tags: ["React", "MapLibre", "Deck.gl", "TypeScript", "Docker", "Python", "Node.js", "PostgreSQL", "GeoServer"],
+    demoUrl: "https://vimeo.com/1069754132",
+    repoUrl: "#"
+  },
+  {
+    title: "Map Layer Styler",
+    description: "Specialized tool for customizing and styling map layers with GeoServer integration. MapLibre and Mapbox for advanced cartographic style rendering. Dynamic color picker and real-time style preview.",
     image: "../images/layer-style.png",
-    tags: ["React" , "Geoserver" , "JavaScript" , "TailwindCSS" , "Redux" , "Mapbox" , "MapLibre" , "Python"],
+    tags: ["React", "GeoServer", "TypeScript", "Redux Toolkit", "Mapbox", "MapLibre", "Python"],
     demoUrl: "https://vimeo.com/1028033387?share=copy",
     repoUrl: "https://custom-style-layer-maplibre-component-ten.vercel.app"
   },
   {
+    title: "Geocoder V2",
+    description: "High-performance geocoding service built with FastAPI. Redis caching layer with hiredis for sub-millisecond lookups. Fuzzy search using edit distance algorithms. Production deployment with Gunicorn.",
+    image: "../images/geocoder.png",
+    tags: ["Python", "FastAPI", "Redis", "Docker", "REST API", "Elasticsearch"],
+    demoUrl: "#",
+    repoUrl: "#"
+  },
+  {
+    title: "Predictive Model Dashboard",
+    description: "Machine learning dashboard with Scikit-learn and Prophet for time series forecasting. Hyperparameter optimization with Optuna. Interactive Chart.js visualizations on React frontend.",
+    image: "../images/predictive.png",
+    tags: ["React", "Python", "TypeScript", "Node.js"],
+    demoUrl: "#",
+    repoUrl: "#"
+  },
+  {
     title: "Market B2B",
-    description: "Marketplace B2B desarrollado con arquitectura GraphQL moderna, utilizando Apollo Client/Server para gestión eficiente de datos y transacciones comerciales entre empresas.",
+    description: "B2B marketplace built with modern GraphQL architecture. Apollo Client/Server for efficient data management and commercial transactions between companies.",
     image: "../images/MDR.png",
-    tags: ["Apollo-Client" , "Apollo-Server" , "GraphQL" , "PostgreSQL" , "Node.js" , "JavaScript" , "Tailwind"],
+    tags: ["React", "GraphQL", "PostgreSQL", "Node.js", "JavaScript"],
     demoUrl: "https://vimeo.com/manage/videos/876953448",
     repoUrl: "https://market-residuos.vercel.app"
   },
   {
-    title: "Pagina Web De Videojuegos",
-    description: "Plataforma web dedicada a videojuegos con base de datos PostgreSQL para gestión de contenido, interfaz React interactiva y sistema de estado global con Redux para experiencia de usuario optimizada.",
+    title: "Videogames Platform",
+    description: "Web platform for videogames with PostgreSQL database for content management, interactive React interface and global state management with Redux.",
     image: "../images/Videogames.png",
-    tags: ["React.js" ,"PostgreSQL" ,"Node.js" ,"JavaScript" ,"Express" ,"Redux" ,"CSS"],
+    tags: ["React", "PostgreSQL", "Node.js", "JavaScript", "Express", "Redux"],
     demoUrl: "https://vimeo.com/876415669?share=copy",
     repoUrl: "#"
   }
 ];
 
-const categories = ["All", "React", "Node.js", "TypeScript", "Next.js", "JavaScript", "Python"];
+const categories = ["All", "React", "Python", "TypeScript", "Node.js", "Docker", "GeoServer", "FastAPI"];
 ---
 
 <section id="projects" class="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300">
